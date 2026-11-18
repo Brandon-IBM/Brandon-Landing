@@ -3,7 +3,7 @@ export const content = {
   metadata: {
     title: 'Brandon Nova / IBM Consulting / Internal',
     description:
-      'Internal capability brief for the Southwest Gas account team. Working software, rapid product development, and engineering opportunities.',
+      'An internal IBM engineering profile: utility data engineering, compliance monitoring, machine learning, and application development.',
   },
   identity: {
     name: 'Brandon Nova',
@@ -14,66 +14,55 @@ export const content = {
     skip: 'Skip to content',
   },
   hero: {
-    label: 'Data Engineering / Applied AI',
-    audience: 'Southwest Gas account team',
-    headline: ['I turn ideas into', 'working software.'],
+    headline: ['I build tools that make', 'complex data work simpler.'],
     description:
-      'I build internal tools, data workflows, and AI-enabled prototypes. I also work with IBM account teams to identify problems worth solving.',
+      'Experience across utility data engineering, compliance monitoring, and internal software development.',
   },
   work: {
-    heading: 'Selected work.',
+    label: 'Projects',
+    helpLabel: 'How this helps',
     items: [
       {
         number: '01',
-        name: 'IBM Social',
-        headline: 'Built an internal talent discovery platform.',
-        emphasis: '',
+        name: 'AEP',
+        title: 'Data Engineering & Automation',
         description:
-          'Search across associate skills, experience, and availability. Backend engineering, data integration, and enterprise deployment preparation.',
-        status: 'Working application',
-        type: 'software',
+          'Built a JSON generator; worked on power-device ETL transformations and validation. Investigated queues, audit logs, and results tables.',
+        help: 'Automate data work, improve validation, and troubleshoot pipelines.',
       },
       {
         number: '02',
-        name: 'Soverflow',
-        headline: 'Built an MVP in ',
-        emphasis: '9 days.',
+        name: 'Orlando Utilities Commission',
+        title: 'Compliance & Machine Learning',
         description:
-          'Co-built a talent marketplace while working full-time. Owned backend development for projects, profiles, discovery, and matching.',
-        status: 'Working MVP',
-        type: 'software',
+          'Worked in compliance and developed a machine-learning model to monitor transactions.',
+        help: 'Identify transaction patterns and support compliance review.',
       },
       {
         number: '03',
-        name: 'IBM Account Engagements',
-        headline: 'Turned outreach into engineering opportunities.',
-        emphasis: '',
+        name: 'IBM Social',
+        title: 'Internal Application Development',
         description:
-          'Partner outreach led to technical discovery, repository access, and an IBM Financial Services AI projects meeting invitation.',
-        status: 'Active engagements',
-        type: 'opportunity',
+          'Built an application to search associate skills, certifications, experience, and availability. Developed backend integrations; worked toward enterprise deployment.',
+        help: 'Make operational information easier to find and use.',
       },
     ],
   },
   contribution: {
     heading: 'Where I can contribute.',
-    description:
-      'I can help investigate a workflow and test whether software or AI can improve it.',
     capabilities: [
       {
-        title: 'Operational Data',
-        description: 'Validation, reconciliation, integrations, and automation.',
+        title: 'Data Engineering',
+        description: 'ETL, data validation, transformations, and automation.',
       },
       {
-        title: 'Engineering Prototypes',
-        description: 'Internal tools and AI-assisted proofs of concept.',
+        title: 'Applied AI',
+        description: 'Machine learning, data analysis, and focused AI prototypes.',
       },
       {
-        title: 'Technical Discovery',
-        description: 'Workflow investigation, requirements, and stakeholder testing.',
+        title: 'Software Development',
+        description: 'Internal applications, integrations, and workflow tools.',
       },
     ],
-    possibilities:
-      'Potential starting points: project documentation, pipeline compliance evidence, and regulatory information workflows, subject to client needs and access.',
   },
 } as const

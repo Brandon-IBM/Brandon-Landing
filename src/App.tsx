@@ -2,21 +2,22 @@ import { content } from './content'
 
 function SelectedWork() {
   return (
-    <section className="selected-work" aria-labelledby="work-heading">
-      <h2 id="work-heading">{content.work.heading}</h2>
-      <ol className="work-list">
+    <section className="selected-work" aria-label={content.work.label}>
+      <ol className="work-list grid">
         {content.work.items.map((work) => (
-          <li className="work-row grid" key={work.number}>
-            <div className="work-index">
-              <span>{work.number}</span>
-              <span className="index-slash" aria-hidden="true">/</span>
-              <span>{work.name}</span>
-            </div>
-            <div className="work-detail">
-              <h3>{work.headline}{work.emphasis && <strong>{work.emphasis}</strong>}</h3>
-              <p>{work.description}</p>
-            </div>
-            <span className={`work-status status-${work.type}`}>{work.status}</span>
+          <li key={work.number}>
+            <article className="project flex flex-col" aria-labelledby={`project-${work.number}`}>
+              <p className="project-name flex items-baseline">
+                <span className="project-number">{work.number}</span>
+                <span>{work.name}</span>
+              </p>
+              <h2 id={`project-${work.number}`}>{work.title}</h2>
+              <p className="project-description">{work.description}</p>
+              <p className="project-help">
+                <span className="help-label block">{content.work.helpLabel}</span>
+                <span className="help-copy block">{work.help}</span>
+              </p>
+            </article>
           </li>
         ))}
       </ol>
@@ -27,21 +28,15 @@ function SelectedWork() {
 function Contribution() {
   return (
     <section className="contribution grid" aria-labelledby="contribution-heading">
-      <div className="contribution-intro">
-        <h2 id="contribution-heading">{content.contribution.heading}</h2>
-        <p>{content.contribution.description}</p>
-      </div>
-      <div className="contribution-detail">
-        <dl className="capability-list grid">
-          {content.contribution.capabilities.map((capability) => (
-            <div className="capability-row grid" key={capability.title}>
-              <dt>{capability.title}</dt>
-              <dd>{capability.description}</dd>
-            </div>
-          ))}
-        </dl>
-        <p className="possibilities">{content.contribution.possibilities}</p>
-      </div>
+      <h2 id="contribution-heading">{content.contribution.heading}</h2>
+      <dl className="capability-list grid">
+        {content.contribution.capabilities.map((capability) => (
+          <div className="capability-row grid" key={capability.title}>
+            <dt>{capability.title}</dt>
+            <dd>{capability.description}</dd>
+          </div>
+        ))}
+      </dl>
     </section>
   )
 }
@@ -60,10 +55,6 @@ export default function App() {
 
       <main id="main" tabIndex={-1}>
         <section className="hero" aria-labelledby="hero-heading">
-          <div className="hero-labels flex justify-between">
-            <p className="eyebrow">{content.hero.label}</p>
-            <p className="audience">{content.hero.audience}</p>
-          </div>
           <h1 id="hero-heading">
             {content.hero.headline.map((line, index) => (
               <span className="block" key={line}>{index > 0 && ' '}{line}</span>

@@ -1,6 +1,6 @@
 # Brandon Nova / Internal capability brief
 
-A concise internal brief for the IBM Southwest Gas account team. Built with React, TypeScript, Tailwind CSS, and Vite. No backend, external services, animation, or added dependencies.
+A concise internal IBM engineering profile covering utility data engineering, compliance monitoring, machine learning, and application development. Built with React, TypeScript, Tailwind CSS, and Vite. No backend, external services, animation, or added dependencies.
 
 ## Development
 
@@ -33,7 +33,7 @@ The page requests no search indexing. GitHub Pages is normally publicly accessib
 
 Edit `src/content.ts` to change all visible copy and page metadata.
 
-The three examples distinguish working software from current engineering opportunities. They do not claim production adoption, client delivery, revenue, or measured business impact. The Financial Services outcome is described as a meeting invitation.
+The three selected projects are AEP, Orlando Utilities Commission, and IBM Social. Each describes actual work and how that experience can help another team. The copy makes no claims about production adoption, model architecture, measured performance, or business impact.
 
 ## Print and PDF
 

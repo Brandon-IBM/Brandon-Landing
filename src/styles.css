@@ -71,21 +71,12 @@ h2 { font-size: 20px; line-height: 1.25; font-weight: 500; letter-spacing: -.65p
 .capability-row dd { color: var(--secondary); }
 .possibilities { color: var(--secondary); font-size: 11px; line-height: 1.65; margin-top: 15px; text-wrap: pretty; }
 
-.closing { grid-template-columns: minmax(0, 1fr) 175px; column-gap: 40px; align-items: end; border-top: 1px solid var(--line); padding: 23px 0 29px; }
-.closing h2 { font-size: 29px; font-weight: 500; line-height: 1.2; letter-spacing: -1px; }
-.closing-description { color: var(--secondary); font-size: 13px; line-height: 1.65; margin-top: 9px; }
-.contact-details { font-style: normal; font-size: 11px; line-height: 1.65; color: var(--secondary); }
-.contact-name { font-weight: 550; color: #191919; }
-.contact-details a { display: inline-block; max-width: 100%; overflow-wrap: anywhere; margin-top: 5px; font-size: 11px; }
-.contact-details a:hover { text-decoration-thickness: 2px; }
-
 @media (min-width: 1600px) {
   .masthead { padding-top: 36px; }
   .hero { padding-top: 46px; padding-bottom: 38px; }
   h1 { font-size: 80px; }
   .work-row { padding: 21px 0; }
   .contribution { padding-top: 29px; padding-bottom: 30px; }
-  .closing { padding-top: 26px; }
 }
 
 @media (max-width: 1100px) and (min-width: 701px) {
@@ -96,8 +87,6 @@ h2 { font-size: 20px; line-height: 1.25; font-weight: 500; letter-spacing: -.65p
   .work-status { font-size: 8px; padding-left: 5px; padding-right: 5px; }
   .contribution { grid-template-columns: 235px minmax(0, 1fr); column-gap: 35px; }
   .capability-row { grid-template-columns: 140px minmax(0, 1fr); column-gap: 15px; font-size: 11px; }
-  .closing { grid-template-columns: minmax(0, 1fr) 140px; column-gap: 24px; }
-  .closing h2 { font-size: 27px; }
 }
 
 @media (max-width: 850px) and (min-width: 701px) {
@@ -133,10 +122,6 @@ h2 { font-size: 20px; line-height: 1.25; font-weight: 500; letter-spacing: -.65p
   .capability-list { row-gap: 14px; }
   .capability-row { grid-template-columns: 135px minmax(0, 1fr); column-gap: 15px; font-size: 12px; line-height: 1.6; }
   .possibilities { font-size: 11px; line-height: 1.7; margin-top: 21px; }
-  .closing { grid-template-columns: 1fr; gap: 21px; padding: 24px 0 28px; }
-  .closing h2 { font-size: 29px; line-height: 1.15; letter-spacing: -1px; max-width: 400px; }
-  .closing-description { max-width: 400px; font-size: 13px; line-height: 1.7; margin-top: 12px; }
-  .contact-details { font-size: 11px; }
 }
 
 @media (max-width: 359px) {
@@ -174,9 +159,5 @@ h2 { font-size: 20px; line-height: 1.25; font-weight: 500; letter-spacing: -.65p
   .capability-list { row-gap: 8px; }
   .capability-row { grid-template-columns: 120px minmax(0, 1fr); gap: 12px; font-size: 9px; line-height: 1.5; }
   .possibilities { font-size: 8.5px; line-height: 1.6; margin-top: 12px; }
-  .closing { grid-template-columns: minmax(0, 1fr) 121px; column-gap: 24px; padding: 21px 0 0; }
-  .closing h2 { font-size: 25px; line-height: 1.2; letter-spacing: -.8px; }
-  .closing-description { font-size: 10px; line-height: 1.6; margin-top: 9px; max-width: 400px; }
-  .contact-details, .contact-details a { font-size: 9px; }
   section, .work-row { break-inside: avoid; }
 }

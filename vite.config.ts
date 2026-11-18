@@ -8,6 +8,8 @@ const escapeHtml = (value: string) => value.replace(/[&<>"']/g, (character) => (
 })[character]!)
 
 export default defineConfig({
+  // Relative assets work on both username.github.io and repository project pages.
+  base: './',
   plugins: [
     react(),
     tailwindcss(),

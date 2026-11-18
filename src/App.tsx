@@ -74,20 +74,6 @@ export default function App() {
 
         <SelectedWork />
         <Contribution />
-
-        <section className="closing grid" aria-labelledby="closing-heading">
-          <div>
-            <h2 id="closing-heading">{content.closing.headline}</h2>
-            <p className="closing-description">{content.closing.description}</p>
-          </div>
-          <address className="contact-details">
-            <p className="contact-name">{content.identity.name}</p>
-            <p>{content.identity.organization}</p>
-            {content.contact.email && (
-              <a href={`mailto:${content.contact.email}`}>{content.contact.email}</a>
-            )}
-          </address>
-        </section>
       </main>
     </div>
   )

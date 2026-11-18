@@ -1,4 +1,4 @@
-/** Edit all page copy here. Add a verified email address to enable direct contact. */
+/** Edit all page copy and metadata here. */
 export const content = {
   metadata: {
     title: 'Brandon Nova / IBM Consulting / Internal',
@@ -75,13 +75,5 @@ export const content = {
     ],
     possibilities:
       'Potential starting points: project documentation, pipeline compliance evidence, and regulatory information workflows, subject to client needs and access.',
-  },
-  closing: {
-    headline: 'Have a problem worth solving?',
-    description: 'I’d welcome the opportunity to help investigate it and build something useful.',
-  },
-  contact: {
-    // Leave blank to show only your name and organization. Never use a placeholder address.
-    email: '',
   },
 } as const
